@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue">
+
+    <include layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="60dp"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/item_message_for_you"
+        android:layout_height="653dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp">
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:hint="Введите сообщение"
+            android:shadowColor="@color/black"
+            android:layout_alignTop="@id/sendButton"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/start_edittext"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/oval_button"
+            android:drawableStart="@drawable/sendicon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@id/messageEditText"
+            android:padding="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

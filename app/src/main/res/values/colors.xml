@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#C3B7B7</color>
+    <color name="red">#BA0A0A</color>
+
+    <color name="dark_blue">#191A1F</color>
+
+    <color name="birusa">#00B6A9</color>
+
+    <color name="xz_dark_blue2">#1F222B</color>
+
+
+    <color name="gradient_one">#00D1C2</color>
+    <color name="gradient_two">#006B63</color>
+
+
+</resources>

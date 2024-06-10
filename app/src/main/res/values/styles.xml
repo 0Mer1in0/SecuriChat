@@ -1,0 +1,9 @@
+<resources>
+    <!-- Стиль для кнопки -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/start_button</item>
+    </style>
+
+
+</resources>
+

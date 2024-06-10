@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/dark_blue"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_menu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/back_prev">
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/white"
+        android:textSize="70px"
+        android:text="Welcome to SecuriChat"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/previ"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="100dp"
+        android:textColor="@color/white"
+        android:text="@string/prev"
+        android:textSize="46px" />
+    <TextView
+        android:id="@+id/Name_Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/NameEditText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="Как тебя зовут?"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp">
+
+        <EditText
+            android:id="@+id/NameEditText"
+            
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/start_edittext"
+            android:hint="Введите имя"
+            android:paddingStart="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ConnectButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/start_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Войти в сообщество"
+            android:layout_above="@id/NameEditText"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+<!--android:background="@drawable/start_button"-->
